@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Picture</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center">Upload Profile Picture</h1>
+        <form action="/upload" method="POST" enctype="multipart/form-data" class="w-50 mx-auto">
+            <div class="form-group">
+                <label for="profilePic">Choose File</label>
+                <input type="file" class="form-control-file" id="profilePic" name="profilePic" required>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">Upload</button>
+        </form>
+    </div>
+</body>
+</html>
